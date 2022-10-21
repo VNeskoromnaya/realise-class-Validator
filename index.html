@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validator</title>
+
+  <style>
+    div {
+      margin: 15px;
+    }
+
+    .errorEmail, 
+    .errorDomain, 
+    .errorDate, 
+    .errorPhone {
+      margin: 0;
+      color: red;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <h1>Form</h1>
+  <form action="" id="form">
+    <div>
+      <label for="email">Email</label>
+      <input type="email">
+    </div>
+    <div class="errorEmail"></div>
+    <div>
+      <label for="domain">Domain</label>
+      <input type="url">
+    </div>
+    <div class="errorDomain"></div>
+    <div>
+      <label for="date">Date</label>
+      <input type="date">
+    </div>
+    <div class="errorDate"></div>
+    <div>
+      <label for="phone">Phone</label>
+      <input type="tel">
+    </div>
+    <div class="errorPhone"></div>
+    <div>
+      <input type="button" id="btnSubmit" value="Отправить">
+    </div>
+  </form>
+
+  <script src="index.js"></script>
+</body>
+</html>
